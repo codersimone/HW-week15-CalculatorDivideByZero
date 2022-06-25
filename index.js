@@ -28,10 +28,10 @@ function calcSumMultiplication() {
 function calcSumDivision() {
     const num1 = getValue('number1');
     const num2 = getValue('number2');
-    result = num1 / num2;
-    document.getElementById('out').innerHTML = 'Результат: ' + result;
     if (num2 === 0) {
         document.getElementById('out').innerHTML = 'Результат: На ноль делить нельзя!';
         return;
     }
+    result = num1 / num2;
+    document.getElementById('out').innerHTML = 'Результат: ' + result;
 }
